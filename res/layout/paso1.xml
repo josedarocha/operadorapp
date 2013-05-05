@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.tactilapp.operadorapp.componente.ImagenDeAnchuraCompleta
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/imagen"
+        android:src="@drawable/insertar_contacto" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip" >
+
+        <EditText
+            android:id="@+id/paso1telefono"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/campo_telefono"
+            android:gravity="center"
+            android:inputType="phone"
+            android:maxLength="20"
+            android:padding="15dip" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/imagen"
+            android:onClick="irABuscarUnContacto"
+            android:src="@drawable/agenda" />
+    </RelativeLayout>
+
+    <com.tactilapp.operadorapp.componente.ImagenDeAnchuraCompleta
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/imagen"
+        android:onClick="irAlPaso2"
+        android:src="@drawable/siguiente" />
+
+</LinearLayout>

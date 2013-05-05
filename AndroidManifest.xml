@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tactilapp.operadorapp"
+    android:versionCode="3"
+    android:versionName="1.3" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.tactilapp.operadorapp.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.tactilapp.operadorapp.permission.C2D_MESSAGE" />
+
+    <application
+        android:name="com.tactilapp.operadorapp.OperadorappApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icono"
+        android:label="@string/titulo"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.tactilapp.operadorapp.actividad.splash.SplashActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/splash_titulo"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/noAnimTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tactilapp.operadorapp.actividad.paso1.Paso1Activity"
+            android:label="@string/paso1_titulo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.tactilapp.operadorapp.actividad.paso2.Paso2Activity"
+            android:label="@string/paso2_titulo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.tactilapp.operadorapp.actividad.paso3.Paso3Activity"
+            android:label="@string/paso3_titulo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.tactilapp.operadorapp.actividad.informacion.InformacionActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/informacion_titulo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+        <!-- REQUIRED -->
+        <receiver android:name="com.urbanairship.CoreReceiver" />
+        <receiver
+            android:name="com.urbanairship.push.GCMPushReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.tactilapp.operadorapp" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.urbanairship.push.PushService"
+            android:label="Push Notification Service" />
+        <service
+            android:name="com.urbanairship.push.PushWorkerService"
+            android:label="Push Notification Worker Service" />
+        <service
+            android:name="com.urbanairship.analytics.EventService"
+            android:label="Event Service" />
+
+        <provider
+            android:name="com.urbanairship.UrbanAirshipProvider"
+            android:authorities="com.tactilapp.operadorapp.urbanairship.provider"
+            android:exported="false"
+            android:multiprocess="true" />
+
+        <receiver android:name="com.tactilapp.operadorapp.IntentReceiver" />
+    </application>
+
+</manifest>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="titulo">Operadorapp</string>
+    <string name="imagen">imagen</string>
+    <string name="salir">Salir</string>
+    <string name="seguro_de_salir">Vas a salir de Operadorapp, ¿estás seguro?</string>
+    <string name="sin_conexion_a_internet">Por favor, compruebe que tiene conexión a Internet</string>
+    
+    <string name="splash_titulo">Operadorapp</string>
+    <string name="paso1_titulo">Operadorapp</string>
+    <string name="error_numero_vacio">Debe indicar un número de teléfono primero.</string>
+		<string name="error_numero_corto">El número de teléfono debe de tener, al menos, 9 caracteres.</string>
+    	
+    <string name="paso2_titulo">Operadorapp</string>
+    <string name="paso2_captcha">Código</string>
+    <string name="paso2_mensaje_cargando">Cargando el código de verificación del número.</string>
+    <string name="paso2_captcha_no_puede_descargarse">No ha sido posible descargar el código de verificación del número. Verifique si dispone de conexión a Internet</string>
+    <string name="paso2_aun_no_hay_captcha">Por favor, espere a que finalice la descarga del código de verificación.</string>
+    <string name="paso2_mensaje_comprobando">Comprobando el código de verificación del número.</string>    
+    <string name="paso2_mensaje_sin_respuesta">No se recibe ninguna respuesta a la comprobación del código. Verifique si dispone de conexión a Internet.</string>
+
+    <string name="error_captcha_vacio">Debe introducir el código primero.</string>
+		<string name="error_captcha_corto">El código debe tener, al menos, 6 caracteres.</string>
+     
+    <string name="paso3_titulo">Operadorapp</string>
+    
+    <string name="informacion_titulo">Operadorapp</string>
+		<string name="sugerencia_asunto">Operadorapp Android</string>
+		<string name="sugerencia_texto">Hola, quería sugerir para Operadorapp en android...</string>
+		<string name="sugerencia_cabecera">Enviar sugerencia/duda</string>
+    
+		<string name="admob_unit_id">ejemplo</string>
+		<string name="flurry_id">ejemplo</string>
+
+</resources>

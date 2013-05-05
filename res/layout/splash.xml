@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fondo_gris" >
+
+    <com.tactilapp.operadorapp.componente.ImagenDeAnchuraCompleta
+        android:id="@+id/splash_operadorapp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dip"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/imagen"
+        android:src="@drawable/operadorapp" />
+
+    <ImageView
+        android:id="@+id/splash_tactilapp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dip"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/imagen"
+        android:src="@drawable/splash_tactilapp" />
+
+    <com.tactilapp.operadorapp.componente.ImagenDeAnchuraCompleta
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/splash_tactilapp"
+        android:layout_below="@id/splash_operadorapp"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dip"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/imagen"
+        android:src="@drawable/logo" />
+
+</RelativeLayout>

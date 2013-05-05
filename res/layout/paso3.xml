@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.tactilapp.operadorapp.componente.ImagenDeAnchuraCompleta
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/imagen"
+        android:src="@drawable/esta_es_la_companhia" />
+
+    <com.tactilapp.operadorapp.componente.TextViewQueSeAdaptaAUnaLinea
+        android:id="@+id/companhia"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:padding="10dip"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <com.tactilapp.operadorapp.componente.ImagenDeAnchuraCompleta
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/imagen"
+        android:onClick="irALlamar"
+        android:src="@drawable/llamar" />
+
+    <com.tactilapp.operadorapp.componente.ImagenDeAnchuraCompleta
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/imagen"
+        android:onClick="irAlPaso1"
+        android:src="@drawable/buscar_otro_numero" />
+
+</LinearLayout>
