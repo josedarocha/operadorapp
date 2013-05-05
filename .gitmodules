@@ -1,0 +1,3 @@
+[submodule "companias"]
+	path = companias
+	url = git@github.com:TactilApp/OperadorApp-Companies.git
